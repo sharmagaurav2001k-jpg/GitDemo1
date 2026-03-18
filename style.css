@@ -50,3 +50,20 @@ section {
   transform: scale(1.05);
   transition: 0.3s;
 }
+#contact {
+  text-align: center;
+  padding: 40px;
+  background: #f9f9f9;
+}
+
+#contact input,
+#contact textarea {
+  width: 250px;
+  padding: 10px;
+  margin: 5px;
+}
+
+#contact button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
