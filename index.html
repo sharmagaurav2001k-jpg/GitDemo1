@@ -12,7 +12,7 @@
     <h1>My Learning App</h1>
     <ul>
       <li>Home</li>
-      <li>About</li>
+      <li onclick="scrollToSection('about')">About</li>
       <li onclick="scrollToSection('resources')">Resources</li>
       <li>Practice</li>
       <li>Contact</li>
@@ -32,6 +32,14 @@
   </div>
 </section>
 
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Hi, I'm Gaurav. I'm learning web development and building this learning app
+    to help beginners understand coding in a simple way.
+  </p>
+</section>
+
 <!-- Practice Section -->
 <section id="practice">
   <h2>Practice</h2>
@@ -41,6 +49,18 @@
     <div class="card">Mini Project 3</div>
   </div>
 </section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  
+  <form>
+    <input type="text" placeholder="Your Name" required><br><br>
+    <input type="email" placeholder="Your Email" required><br><br>
+    <textarea placeholder="Your Message" rows="4"></textarea><br><br>
+    <button type="submit">Send</button>
+  </form>
+</section>
+  
   <script>
 function openPage(topic) {
   window.location.href = topic + ".html";
