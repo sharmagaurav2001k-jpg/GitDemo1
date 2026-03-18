@@ -13,7 +13,7 @@
     <ul>
       <li>Home</li>
       <li>About</li>
-      <li>Resources</li>
+      <li onclick="scrollToSection('resources')">Resources</li>
       <li>Practice</li>
       <li>Contact</li>
     </ul>
@@ -42,9 +42,13 @@
   </div>
 </section>
   <script>
-  function openPage(topic) {
-    alert("You clicked on " + topic);
-  }
+function openPage(topic) {
+  alert("You clicked on " + topic);
+}
+
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
 </script>
 
 </body>
